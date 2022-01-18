@@ -10,7 +10,6 @@ Proof of concept tea subscription API where a customer can be subscribed to a te
   bundle install 
   
   rake db:{create,migrate}
-  
   ```
 
 ### How to run the test suite
