@@ -1,14 +1,19 @@
 # Tea Subscription
 
-Proof of concept tea subscription API where a customer can be paired to a tea. Using a Rails 5 and Postgres Database.
+Proof of concept tea subscription API where a customer can be subscribed to a tea. Using Rails 5 and Postgres Database tested with RSpec.
 
+### Deployment instructions
 
-
-* System dependencies
-
-* Configuration
-
-* Database creation
+  ``` 
+  git clone 
+  
+  bundle install 
+  
+  rake db:{create,migrate}
+  
+  bundle exec install figaro
+  
+  ```
 
 * Database initialization
 
