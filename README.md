@@ -5,22 +5,67 @@ Proof of concept tea subscription API where a customer can be subscribed to a te
 ### Deployment instructions
 
   ``` 
-  git clone 
+  git clone https://github.com/Rteske/tea_sub
   
   bundle install 
   
   rake db:{create,migrate}
   
-  bundle exec install figaro
-  
   ```
 
-* Database initialization
+### How to run the test suite
 
-* How to run the test suite
+  ``` bundle exec rspec ```
 
-* Services (job queues, cache servers, search engines, etc.)
+### API Endpoints
 
-* Deployment instructions
+<details>
+  <summary>Get All Teas</summary>
+  * Method: GET
+  * Endpoint: /teas
+```
+  {
+    data:
+    [
+      {
+        id: integer,
+        title: string,
+        description: string,
+        tempature: float,
+        brew_time: integer,
+        price_per_gram: float
+      }
+    ]
+  }
+```
+</details>
 
-* ...
+<details>
+  <summary>Create a subscription</summary>
+  * Method: POST
+  * Endpoint: /subscriptions
+  * Body: Raw JSON Format { "customer_id": 1, "tea_id": 1, "amount": 2 } 
+```
+{
+    "data": {
+        "id": integer,
+        "title": string,
+        "price": float,
+        "status": integer,
+        "frequency": sting(timestamp),
+        "customer_id": integer,
+        "tea_id": integer,
+        "created_at": timestamp,
+        "updated_at": timestamp,
+        "amount": integer
+    }
+}
+```
+</details>
+
+<details>
+  <summary>Delete a Subscription</summary>
+  * Method: DELETE
+  * Endpoint: /subscriptions/:id
+  * Response: 204 No Content
+</details>
