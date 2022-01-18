@@ -22,7 +22,9 @@ Proof of concept tea subscription API where a customer can be subscribed to a te
 <details>
   <summary>Get All Teas</summary>
   * Method: GET
+  
   * Endpoint: /teas
+  
 ```
   {
     data:
@@ -38,13 +40,17 @@ Proof of concept tea subscription API where a customer can be subscribed to a te
     ]
   }
 ```
+  
 </details>
 
 <details>
   <summary>Create a subscription</summary>
   * Method: POST
+  
   * Endpoint: /subscriptions
+  
   * Body: Raw JSON Format { "customer_id": 1, "tea_id": 1, "amount": 2 } 
+  
 ```
 {
     "data": {
@@ -61,11 +67,17 @@ Proof of concept tea subscription API where a customer can be subscribed to a te
     }
 }
 ```
+  
 </details>
 
 <details>
+  
   <summary>Delete a Subscription</summary>
+  
   * Method: DELETE
+  
   * Endpoint: /subscriptions/:id
+  
   * Response: 204 No Content
+  
 </details>
