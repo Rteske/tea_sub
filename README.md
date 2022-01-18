@@ -20,7 +20,9 @@ Proof of concept tea subscription API where a customer can be subscribed to a te
 ### API Endpoints
 
 <details>
+  
   <summary>Get All Teas</summary>
+  
   * Method: GET
   
   * Endpoint: /teas
@@ -44,7 +46,9 @@ Proof of concept tea subscription API where a customer can be subscribed to a te
 </details>
 
 <details>
+  
   <summary>Create a subscription</summary>
+  
   * Method: POST
   
   * Endpoint: /subscriptions
