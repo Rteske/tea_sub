@@ -1,11 +1,8 @@
-# README
+# Tea Subscription
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Proof of concept tea subscription API where a customer can be paired to a tea. Using a Rails 5 and Postgres Database.
 
-Things you may want to cover:
 
-* Ruby version
 
 * System dependencies
 
